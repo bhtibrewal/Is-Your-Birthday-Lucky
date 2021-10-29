@@ -1,7 +1,7 @@
 {
-  "name": "lucky-birthday",
+  "name": "is-your-birthday-lucky",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enter a Date of Birth and a Lucky number to find out if the DOB is lucky or not.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

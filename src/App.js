@@ -7,16 +7,24 @@ var luckynum = 0;
 export default function App() {
   const [output, setOutput] = useState("");
   function clickHandler() {
-    var sum = 0;
+    var sum = calculateSum();
+    checkLucky(sum);
+  }
+  function checkLucky(sum) {
+    if (sum % luckynum === 0) setOutput("🎉🥳 Your Birthday is lucky!! 🥳🎉");
+    else setOutput("😔 Your Birthday is not lucky!! 😔");
+  }
+  function calculateSum() {
     var dateArray = inputDate.split("-");
-
+    var sum = 0;
     dateArray.map(function (index) {
-      //console.log({ index });
+      // console.log({ index });
       for (var i = 0; i < index.length; i++) sum = sum + Number(index[i]);
     });
     console.log(sum);
-    setOutput(inputDate);
+    return sum;
   }
+
   return (
     <div className="App">
       <h1>Is Your Birthday Lucky? </h1>
