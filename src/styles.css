@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #2f4f4f;
+  width: 80%;
+  border-radius: 1rem;
+  margin: auto;
+  padding: 1rem;
+}
+input {
+  padding: 1rem;
+  width: 50%;
+}
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  color: white;
+}
