@@ -7,14 +7,14 @@ var luckynum = 0;
 export default function App() {
   const [output, setOutput] = useState("");
   function clickHandler() {
-    var sum=0;
-    var dateArray=inputDate.split("-");
-    //console.log( inputDate[1]);
-    // dateArray.map(function (index){
-    //   sum=sum+
-    }
+    var sum = 0;
+    var dateArray = inputDate.split("-");
 
-
+    dateArray.map(function (index) {
+      //console.log({ index });
+      for (var i = 0; i < index.length; i++) sum = sum + Number(index[i]);
+    });
+    console.log(sum);
     setOutput(inputDate);
   }
   return (
