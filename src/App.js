@@ -1,14 +1,20 @@
 import "./styles.css";
-
 import { useState } from "react";
 
 var inputDate = " ";
-var luckynum = " ";
+var luckynum = 0;
 
 export default function App() {
   const [output, setOutput] = useState("");
   function clickHandler() {
-    console.log(inputDate);
+    var sum=0;
+    var dateArray=inputDate.split("-");
+    //console.log( inputDate[1]);
+    // dateArray.map(function (index){
+    //   sum=sum+
+    }
+
+
     setOutput(inputDate);
   }
   return (
