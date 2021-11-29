@@ -17,3 +17,8 @@ input {
   background-color: #000000;
   color: white;
 }
+.privacy-notice {
+  padding: 1rem;
+  background-color: red;
+  margin-bottom: 10px;
+}
